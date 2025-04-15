@@ -1,0 +1,30 @@
+return {
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "bashls",
+        "clangd",
+        "cmake",
+        "cssls",
+        "dockerls",
+        "jsonls",
+        "lua_ls",
+        "marksman",
+        "pyright",
+        "rust_analyzer",
+        "yamlls",
+        "dockerls",
+        "gopls",
+        "ruff",
+        "omnisharp",
+        "debugpy",
+        "codelldb",
+        "delve",
+        "go-debug-adapter",
+        "netcoredbg",
+        "node-debug2",
+      },
+    },
+  },
+}

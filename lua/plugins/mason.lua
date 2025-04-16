@@ -46,4 +46,27 @@ return {
       automatic_installation = true,
     },
   },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "cmakelang",
+        "cmakelint",
+        "csharpier",
+        "flake8",
+        "gofumpt",
+        "goimports",
+        "hadolint",
+        "markdown-toc",
+        "markdownlint-cli2",
+        "prettier",
+        "ruff",
+        "shellcheck",
+        "sqlfluff",
+        "stylua",
+        "shfmt",
+      },
+      automatic_installation = true,
+    },
+  },
 }

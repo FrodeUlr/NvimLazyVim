@@ -5,3 +5,12 @@ local map = LazyVim.safe_keymap_set
 map("n", "<m-/>", function()
   Snacks.terminal(nil, { cwd = LazyVim.root() })
 end, { desc = "Terminal (Root Dir)" })
+
+for i = 1, 9 do
+  map(
+    "n",
+    "<leader>" .. i .. "",
+    "<Cmd>BufferLineGoToBuffer " .. i .. "<CR>",
+    { noremap = true, silent = true, desc = "Goto Buffer " .. i }
+  )
+end

@@ -14,3 +14,12 @@ for i = 1, 9 do
     { noremap = true, silent = true, desc = "Goto Buffer " .. i }
   )
 end
+
+-- Close current buffer
+map("n", "<A-c>", "<Cmd>bd<CR>", {
+  noremap = true,
+  silent = true,
+  desc = "Close Current Buffer",
+})
+
+map("i", "kj", "<Esc>", { noremap = true, silent = true, desc = "Exit insert mode with kj" })

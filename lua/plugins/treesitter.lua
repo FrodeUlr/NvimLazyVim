@@ -24,6 +24,7 @@ return {
         "c",
         "go",
         "java",
+        "proto",
         "python",
         "rust",
         "tsx",

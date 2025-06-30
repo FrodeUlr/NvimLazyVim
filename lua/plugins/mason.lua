@@ -54,8 +54,6 @@ return {
         "cmakelint",
         "csharpier",
         "flake8",
-        "gofumpt",
-        "goimports",
         "hadolint",
         "markdown-toc",
         "markdownlint-cli2",

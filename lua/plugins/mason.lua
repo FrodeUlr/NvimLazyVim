@@ -18,7 +18,6 @@ return {
         "marksman",
         "neocmake",
         "omnisharp",
-        "pyright",
         "ruff",
         "rust_analyzer",
         "taplo",

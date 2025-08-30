@@ -23,3 +23,10 @@ map("n", "<A-c>", "<Cmd>bd<CR>", {
 })
 
 map("i", "kj", "<Esc>", { noremap = true, silent = true, desc = "Exit insert mode with kj" })
+
+function _G.set_terminal_keymaps()
+  local opts2 = { buffer = 0 }
+  vim.keymap.set("t", "kj", [[<C-\><C-n>]], opts2)
+  vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], opts2)
+end
+vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")

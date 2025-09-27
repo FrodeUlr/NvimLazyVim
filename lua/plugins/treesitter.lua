@@ -39,6 +39,8 @@ return {
         "svelte",
         "typst",
         "vue",
+        "http",
+        "graphql",
       },
     },
   },

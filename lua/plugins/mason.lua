@@ -62,6 +62,7 @@ return {
         "sqlfluff",
         "stylua",
         "shfmt",
+        "sonarlint-language-server",
       },
       automatic_installation = true,
     },

@@ -8,3 +8,5 @@ if vim.fn.has("win32") == 1 then
   vim.opt.shellquote = '"'
   vim.opt.shellxquote = ""
 end
+
+vim.g.python3_host_prog = "~/.nvim_python/bin/python"

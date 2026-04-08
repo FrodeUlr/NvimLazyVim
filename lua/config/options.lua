@@ -9,4 +9,8 @@ if vim.fn.has("win32") == 1 then
   vim.opt.shellxquote = ""
 end
 
-vim.g.python3_host_prog = "~/.nvim_python/bin/python"
+if vim.fn.has("win32") == 1 then
+  vim.g.python3_host_prog = vim.fn.expand("~/.nvim_python/Scripts/python.exe")
+else
+  vim.g.python3_host_prog = vim.fn.expand("~/.nvim_python/bin/python")
+end

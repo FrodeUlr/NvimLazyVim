@@ -6,7 +6,7 @@ return {
       "nvim-lua/plenary.nvim",
     },
     opts = {
-      model = "gpt-5.5", -- or another model your Copilot account supports
+      model = "gpt-5.6-sol", -- or another model your Copilot account supports
     },
   },
 }
